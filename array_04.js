@@ -1,2 +1,2 @@
 let array = ["rokib","Rohim"];
-console.log(array);
+console.log(array);  
