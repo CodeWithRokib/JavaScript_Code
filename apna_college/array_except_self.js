@@ -11,6 +11,7 @@ function productExceptSelf(nums) {
     // Step 2: Calculate the suffix product and multiply with the prefix product
     let suffix = 1;
     for (let i = n - 1; i >= 0; i--) {
+
         answer[i] = answer[i] * suffix;
         suffix *= nums[i];  // Update suffix product
     }
@@ -21,3 +22,4 @@ function productExceptSelf(nums) {
 // Example usage:
 let nums = [1, 2, 3, 4];
 console.log(productExceptSelf(nums));  // Output: [24, 12, 8, 6]
+
